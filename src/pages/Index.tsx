@@ -1,25 +1,25 @@
-import { useNavigate } from 'react-router-dom';
-import Scene3D from '@/components/Scene3D';
+import { useNavigate } from "react-router-dom";
+import Scene3D from "@/components/Scene3D";
 
 const Index = () => {
   const navigate = useNavigate();
 
   const handleHotspotClick = (hotspotId: string) => {
     switch (hotspotId) {
-      case 'design-portfolio':
-        navigate('/design-portfolio');
+      case "design-portfolio":
+        navigate("/design-portfolio");
         break;
-      case 'web-development':
-        navigate('/web-development');
+      case "web-development":
+        navigate("/web-development");
         break;
-      case 'tannin-project':
-        navigate('/tannin-project');
+      case "tannin-project":
+        navigate("/tannin-project");
         break;
-      case 'uni-projects':
-        navigate('/uni-projects');
+      case "uni-projects":
+        navigate("/uni-projects");
         break;
-      case 'automobile':
-        navigate('/automobile-projects');
+      case "automobile":
+        navigate("/automobile-projects");
         break;
       default:
         break;
@@ -28,13 +28,6 @@ const Index = () => {
 
   return (
     <div className="min-h-screen relative bg-gradient-to-br from-background via-background to-purple/10">
-      {/* Header */}
-      <div className="absolute top-0 left-0 right-0 z-10 p-6">
-        <div className="glass-card max-w-fit mx-auto px-6 py-3 animate-fade-in">
-          <h1 className="text-2xl font-bold gradient-text">Portfolio</h1>
-        </div>
-      </div>
-
       {/* 3D Scene */}
       <Scene3D onHotspotClick={handleHotspotClick} />
 
