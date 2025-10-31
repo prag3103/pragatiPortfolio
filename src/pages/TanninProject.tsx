@@ -115,7 +115,7 @@ const TanninContent: React.FC = () => {
 
                 <section className="space-y-6">
                     <h2 className="text-5xl font-bold text-[#F59E0B]">
-                        <TypingText text="§ VISUALS" className="inline-block" speed={0.03} />
+                        <TypingText text="§ PAGES" className="inline-block" speed={0.03} />
                     </h2>
                     <div className="flex overflow-x-auto space-x-6 p-4 -m-4">
                         <div className="flex-shrink-0 w-[32rem] h-96">
@@ -149,17 +149,12 @@ const TanninContent: React.FC = () => {
                     <h2 className="text-5xl font-bold text-[#F59E0B] text-center">
                           <TypingText text="TEXT ANIMATION PLACEHOLDER" className="inline-block" speed={0.03} />
                     </h2>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                        <SectionPlaceholder title="Image placeholder 1" height="h-40" />
-                        <SectionPlaceholder title="Image placeholder 2" height="h-40" />
-                        <SectionPlaceholder title="Image placeholder 3" height="h-40" />
-                        <SectionPlaceholder title="Image placeholder 4" height="h-40" />
-                    </div>
+                    
                 </section>
 
                 <section className="space-y-6">
                     <h3 className="text-3xl font-bold text-[#F59E0B]">
-                        <TypingText text="Get the customization as you scroll down this website" speed={0.03} />
+                        <TypingText text="3D - Models" speed={0.03} />
                     </h3>
                     
                     <div className="flex overflow-x-auto space-x-4 p-4 rounded-xl border border-[#F59E0B]/30">
@@ -175,7 +170,7 @@ const TanninContent: React.FC = () => {
                     
                     <div className="pt-8 space-y-4">
                         <p className="text-white/80 text-lg leading-loose">
-                            <TypingText text="This is where the remaining text and content blocks will go. The entire page is dedicated to providing an immersive, deep-dive experience into the Tannin Project, using high-impact visuals and bespoke animations." speed={0.015} />
+                            <TypingText text="Here is the link to the tannin website. It is a github repo, since the company is still in it's development stages: https://prag3103.github.io/tannin-website/" speed={0.015} />
                         </p>
                         <p className="text-white/80 text-lg leading-loose">
                             <TypingText text="More text space..." speed={0.015} />
