@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 const links = [
   { id: 'home', label: 'Home' },
   { id: 'about', label: 'About' },
-  { id: 'showreel', label: 'Showreel' },
   { id: 'projects', label: 'Projects' },
   { id: 'creative-pursuits', label: 'Creative Pursuits' },
 ];

@@ -18,6 +18,15 @@ export default function CreativePursuits() {
           <p>Add a short writeup — concept, techniques, and your role.</p>
         </div>
       </div>
+      <a
+        className="btn"
+        style={{ marginTop: 28 }}
+        href="https://www.behance.net/pragatiprabhak1"
+        target="_blank"
+        rel="noreferrer"
+      >
+        More 3D Projects
+      </a>
 
       <h3 className="pursuits-sub">Art</h3>
       <div className="art-grid">

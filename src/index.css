@@ -278,34 +278,6 @@ img, video {
   color: var(--accent);
 }
 
-/* ---------- showreel ---------- */
-
-.showreel-frame {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  background: var(--bg-raised);
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
-  color: var(--text-muted);
-}
-
-.showreel-frame .play {
-  width: 72px;
-  height: 72px;
-  border-radius: 50%;
-  border: 1px solid var(--accent);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--accent);
-  font-size: 1.4rem;
-}
-
 /* ---------- projects ---------- */
 
 .projects-scroll {
