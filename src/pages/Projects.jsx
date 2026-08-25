@@ -4,6 +4,7 @@ const projects = [
     category: 'internship project',
     blurb: "A creative web development internship with a wine startup in Bangalore, building their dynamic brand website end to end. I created the hero section's 3D animation in Blender — including fluid simulations of pouring wine — bringing product storytelling directly into the browser.",
     tags: ['blender', 'fluid simulation', 'web dev'],
+    link: 'https://prag3103.github.io/tannin-website/',
   },
   {
     title: 'Scuderia: Aerodynamic Redesign Simulation',
@@ -42,6 +43,16 @@ export default function Projects() {
                 <span key={t}>#{t}</span>
               ))}
             </div>
+            {p.link && (
+              <a
+                className="btn project-link"
+                href={p.link}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Visit website
+              </a>
+            )}
           </article>
         ))}
       </div>
