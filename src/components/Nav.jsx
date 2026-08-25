@@ -4,6 +4,7 @@ const links = [
   { id: 'home', label: 'Home' },
   { id: 'about', label: 'About' },
   { id: 'projects', label: 'Projects' },
+  { id: 'ai-ml-projects', label: 'AI/ML Projects' },
   { id: 'creative-pursuits', label: 'Creative Pursuits' },
 ];
 
