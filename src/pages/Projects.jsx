@@ -7,19 +7,13 @@ const projects = [
     link: 'https://prag3103.github.io/tannin-website/',
   },
   {
-    title: 'Scuderia: Aerodynamic Redesign Simulation',
-    category: 'academic project',
-    blurb: 'An aerodynamic study redesigning a car body and simulating both versions in Houdini to test the changes against real airflow behaviour. The original and redesigned models are compared side by side on an interactive website, turning simulation data into something you can explore rather than just read.',
-    tags: ['cfd', 'simulation'],
-  },
-  {
     title: 'Confluence',
     category: 'academic project',
     blurb: "A simulation and fabrication project built on the idea that water holds memory. Fluid behaviour explored in simulation is translated into physical form, turning water's abstractness — the thing that has always fascinated me — into something you can stand in front of.",
     tags: ['simulation', 'fabrication'],
   },
   {
-    title: 'Cyberdeck Electronics Project',
+    title: 'Nuni: Your Language Learning buddy',
     category: 'academic project',
     blurb: 'A fun electronic project I am working on.',
     tags: ['hardware', 'electronics'],
@@ -29,6 +23,18 @@ const projects = [
 export default function Projects() {
   return (
     <section id="projects" className="page">
+                  <div className="project-card" onClick={() => { window.location.hash = 'antigallery'; }} style={{ width: '100%', maxWidth: 'none', marginBottom: '5rem', padding: '3rem', cursor: 'pointer' }}>
+        <span className="mono-label">Recent mini Project · swift app</span>
+        <h2 style={{ fontSize: '3rem', margin: '1rem 0' }}>Antigallery</h2>
+        <p style={{ fontSize: '1.2rem', maxWidth: '40rem' }}>
+          A Swift app for intentional and creative galleries — a small project challenge I worked on.
+        </p>
+        <div className="tags">
+          <span>#swift</span>
+          <span>#ios</span>
+          <span>#app design</span>
+        </div>
+      </div>
       <h2 className="section-title">
         <span className="slash">/</span> projects
       </h2>
