@@ -217,6 +217,88 @@ export default function Antigallery() {
           carefully composed spaces for memory, reflection, and story.
         </p>
       </Showcase>
+
+      {/* V1 Recording */}
+      <hr
+        style={{
+          border: 'none',
+          borderTop: `1px solid ${TEAL}`,
+          opacity: 0.4,
+          margin: '6rem 0 3rem',
+        }}
+      />
+
+      <h2 className="section-title">
+        <span className="slash">/</span> v1 recording
+      </h2>
+
+      <div
+        style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+          gap: '4rem',
+          alignItems: 'center',
+          margin: '4rem 0',
+        }}
+      >
+        <div
+          style={{
+            position: 'relative',
+            maxWidth: '320px',
+            width: '100%',
+            margin: '0 auto',
+            zIndex: 0,
+          }}
+        >
+          <span
+            aria-hidden="true"
+            style={{
+              position: 'absolute',
+              top: '1.25rem',
+              bottom: '-1.25rem',
+              left: '-1.5rem',
+              right: '1.5rem',
+              display: 'block',
+              backgroundColor: TEAL,
+              borderRadius: '28px',
+              zIndex: -1,
+            }}
+          />
+          <video
+            src={img('v1_screenrecording.mov')}
+            autoPlay
+            muted
+            loop
+            playsInline
+            controls
+            preload="metadata"
+            aria-label="Screen recording of Antigallery version 1 running on an iPhone"
+            style={{
+              position: 'relative',
+              width: '100%',
+              display: 'block',
+              borderRadius: '28px',
+              border: '6px solid #111',
+              background: '#000',
+              boxShadow: '0 12px 30px rgba(0,0,0,0.45)',
+            }}
+          />
+        </div>
+        <div style={{ fontFamily: 'monospace', fontSize: '0.95rem', lineHeight: 1.7 }}>
+          <p>
+            This is the first working version of Antigallery, running on my own iPhone with my own
+            camera roll. Built in SwiftUI, it brings the Figma concept to life: photos are imported
+            straight from the Photos app and sorted into flowers by time, from today and yesterday
+            through to past months and years.
+          </p>
+          <p>
+            In the recording you can see the full flow: importing photos, choosing the Flowerbed of
+            Memories theme, spinning a flower to travel through its moments, and tapping a photo to
+            bring it forward. A double tap flips the photo over, where a memory can be written on
+            its back.
+          </p>
+        </div>
+      </div>
     </section>
   );
 }
