@@ -265,7 +265,7 @@ export default function Antigallery() {
             }}
           />
           <video
-            src={img('v1_screenrecording.mov')}
+            src={img('v1_screenrecording.mp4')}
             autoPlay
             muted
             loop
