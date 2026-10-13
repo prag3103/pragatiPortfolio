@@ -299,6 +299,75 @@ export default function Antigallery() {
           </p>
         </div>
       </div>
+
+      {/* Notes on v1 to build a better v2 */}
+      <hr
+        style={{
+          border: 'none',
+          borderTop: `1px solid ${TEAL}`,
+          opacity: 0.4,
+          margin: '6rem 0 3rem',
+        }}
+      />
+
+      <h2 className="section-title">
+        <span className="slash">/</span> notes on v1 to build a better v2
+      </h2>
+
+      <div
+        style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
+          gap: '1.5rem',
+          margin: '3rem 0 4rem',
+        }}
+      >
+        {[
+          [
+            '01',
+            'improve flexible layout',
+            'I built the original app by simulating it on the iPhone 18 Pro, so the sizing looks off on my iPhone 16. I need to adjust the flexible layout in my code so it fits most iPhone screen sizes.',
+          ],
+          [
+            '02',
+            'sharing + saving photos',
+            'Adding a sharing feature, and the ability to save photos from the app back to your iPhone Photos. A handy feature so memories can be shared between friends and family.',
+          ],
+          [
+            '03',
+            'a more real flowerbed',
+            "Figuring out how to make the flower theme look more real, since the quality of the flower PNGs I used could be improved. I'm also deciding whether to keep the flowerbed as a 2D or a 3D design.",
+          ],
+        ].map(([number, title, body]) => (
+          <div
+            key={number}
+            style={{
+              border: `1px solid ${TEAL}33`,
+              borderRadius: '12px',
+              padding: '1.5rem 1.4rem',
+              background: 'rgba(94, 203, 176, 0.03)',
+            }}
+          >
+            <div className="mono-label" style={{ fontSize: '0.7rem', marginBottom: '0.75rem', color: TEAL }}>
+              {number}
+            </div>
+            <div
+              style={{
+                fontFamily: 'monospace',
+                fontWeight: 700,
+                fontSize: '1rem',
+                color: '#e9f8f5',
+                marginBottom: '0.75rem',
+              }}
+            >
+              {title}
+            </div>
+            <p style={{ fontFamily: 'monospace', fontSize: '0.9rem', lineHeight: 1.7, margin: 0 }}>
+              {body}
+            </p>
+          </div>
+        ))}
+      </div>
     </section>
   );
 }
