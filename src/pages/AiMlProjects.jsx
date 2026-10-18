@@ -5,6 +5,15 @@ const projects = [
     blurb: 'A front-end engineering project that predicts World Cup match outcomes, turning model predictions into an interactive, explorable game experience in the browser.',
     tags: ['react', 'prediction', 'sports analytics'],
     link: 'https://incredible-otter-801c3e.netlify.app/',
+    linkLabel: 'Visit website',
+  },
+  {
+    title: 'AeroDNA',
+    category: 'ai/ml project',
+    blurb: 'An AI/ML project exploring aerodynamic design. Open the PDF to read the full project report.',
+    tags: ['machine learning', 'aerodynamics', 'research'],
+    link: '/assets/aerodna%20report.pdf',
+    linkLabel: 'View PDF',
   },
 ];
 
@@ -32,7 +41,7 @@ export default function AiMlProjects() {
                 target="_blank"
                 rel="noreferrer"
               >
-                Visit website
+                {p.linkLabel || 'Visit website'}
               </a>
             )}
           </article>
