@@ -10,12 +10,12 @@ export default function CreativePursuits() {
         <div className="video-card">
           <video className="thumb" controls preload="metadata" src="/assets/A%20New%20You_final_v001.mov" />
           <h3>A New You</h3>
-          <p>Add a short writeup — concept, techniques, and your role.</p>
+         
         </div>
         <div className="video-card">
           <video className="thumb" controls preload="metadata" src="/assets/new%20life.mp4" />
           <h3>Altered States</h3>
-          <p>Add a short writeup — concept, techniques, and your role.</p>
+          
         </div>
       </div>
       <a

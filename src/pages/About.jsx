@@ -14,16 +14,14 @@ export default function About() {
             visual effects and experimental art.
           </p>
           <p>
-            My current projects are where I test that intersection. Suderia,
-            an aerodynamic redesign simulation, has me treating engineering
-            constraints as creative material; Tannin and Confluence are
-            sharpening my animation and simulation craft in Houdini and Maya;
-            and an ongoing cyberdeck build takes me out of the screen
-            entirely — electronics, fabrication, and problem-solving with my
-            hands. The toolkit I'm building runs from Python scripting to
-            physical prototyping, and the work keeps confirming the same
-            conviction: the most interesting problems live between
-            disciplines.
+            I am Pragati and I am in my final year at UAL finishing up BA(hons) Creative Computing. My practice and exploration sits at the intersection of creative technology and conceptual design. 
+
+My Projects on this portfolio have a lot of contradicting disciplines, some that bridge AI and ML while others purely lie on the artistic and visual feed. I have explored various projects from building apps and websites to getting deep into inferencing data (especially since it is F1 related). I also do 3d product visualizations and love using 3d as a medium to build apps and usable interfaces throughout my projects and practice.
+
+I explore media and technology and thinking outside the box to build experiments and concepts to shape the future world - this is what I would say to someone if they asked me what I wanted to do in my life. 
+
+I am a creative person and what I hope to do is build my technical disciplines to innovate and experiment with creative tech and solutions and get really hands on !!
+
           </p>
           <p>
             With one more year of my BA ahead, I'm looking in two directions:
@@ -36,11 +34,11 @@ export default function About() {
           <p className="mono-label">Tools I work with</p>
           <ul className="skills-list">
             <li>Houdini</li>
-            <li>Maya</li>
-            <li>Nuke</li>
-            <li>Unreal Engine</li>
+            <li>Blender</li>
+            <li>React</li>
+            <li>Figma</li>
             <li>Python</li>
-            <li>Procreate</li>
+            <li>Swift ios development</li>
           </ul>
         </div>
         <div className="about-photo">
