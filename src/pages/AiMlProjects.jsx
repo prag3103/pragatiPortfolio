@@ -10,8 +10,8 @@ const projects = [
   {
     title: 'AeroDNA',
     category: 'ai/ml project',
-    blurb: 'An AI/ML project exploring aerodynamic design. Open the PDF to read the full project report.',
-    tags: ['machine learning', 'aerodynamics', 'research'],
+    blurb: 'AeroDNA Lab is an AI-powered Formula 1 performance analysis platform that combines telemetry, machine learning, and circuit-level data to uncover performance patterns, compare team strengths, and inform data-driven aerodynamic and car design decisions.',
+    tags: ['machine learning', 'research'],
     link: '/assets/aerodna%20report.pdf',
     linkLabel: 'View PDF',
   },
